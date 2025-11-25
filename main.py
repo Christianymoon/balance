@@ -14,11 +14,11 @@ endpoint = "https://api.apitube.io/v1/news/everything"
 
 params = {
     "api_key": os.getenv("API_KEY"),
-    "category.id": "medtop:20000350",
+    "category.id": "medtop:20000344",
     "location.name": "Mexico",
     "language.code": "es",
     "topic.id": "industry.financial_news",
-    "source.country.code": "mx",
+    "sort.by": "published_at",
 }
 
 @app.get("/news")
